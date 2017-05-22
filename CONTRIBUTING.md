@@ -1,11 +1,20 @@
-# Contributing to this collection of OmniFocus scripts
+# Contributing
 
-The following is a set of guidelines for contributing to this repositry.
+The following is a set of guidelines for contributing to the Omnifocus Scripts repository.
 
-Every script has their own directory and includes a permissive free software license.
-This folder contains both the compiled and uncompiled code.
+Every script lives in their own directory and includes a permissive free software license. Both the compiled and uncompiled script are present.
 
+### Sample directory
 > Name of Script/  
-└─ Name of Script.applescript __ # Source  
-└─ Name of Script.scpt ________ # Compiled  
-└─ LICENCE __________________ # Compiled  
+└─ Name of Script.applescript (Source)  
+└─ Name of Script.scpt (Compiled)  
+└─ LICENCE (Permissive licence)  
+
+## Keep it fresh!
+
+Every script is expected to be working with the latest version of OmniFocus.
+
+Scripts that do not work as expected (as of old age) are depreciated and moved to the retired branch.
+From there, scripts can be revived.
+
+Thanks!
