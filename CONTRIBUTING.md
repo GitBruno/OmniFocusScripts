@@ -5,11 +5,12 @@ The following is a set of guidelines for contributing to the Omnifocus Scripts r
 Every script lives in their own directory and includes a permissive free software license. Both the compiled and uncompiled script are present.
 
 ### Sample directory
-> Name of Script/  
+Name of Script/  
 └─ Name of Script.applescript (Source)  
 └─ Name of Script.scpt (Compiled)  
+└─ Resources/  
+│ └─ Name of Script-icon.png (Icon)    
 └─ LICENCE (Permissive licence)  
-
 ## Keep it fresh!
 
 Every script is expected to be working with the latest version of OmniFocus.
