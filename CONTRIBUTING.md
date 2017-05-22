@@ -8,9 +8,11 @@ Every script lives in their own directory and includes a permissive free softwar
 Name of Script/  
 └─ Name of Script.applescript (Source)  
 └─ Name of Script.scpt (Compiled)  
+└─ README.md (Instructions)  
 └─ Resources/  
-│ └─ Name of Script-icon.png (Icon)    
+│ └─ Name of Script-icon.png (Icon)  
 └─ LICENCE (Permissive licence)  
+
 ## Keep it fresh!
 
 Every script is expected to be working with the latest version of OmniFocus.
