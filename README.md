@@ -15,18 +15,11 @@ Marks selected actions as complete and creates new actions in a "Waiting For" co
 Reset the due date to later:
 
 1. Tonight (Update due to Today 11pm)
-2. Tomorrow (Update due to tomorrow)
-3. 7 Days (Update due to today + 7 days)
+2. Tomorrow (Add 24 hours to due date)
+3. 7 Days (Add today + 7 days to due date)
 
 ### Process Every Project  (Curt Clifton)
 A template for script developers that processes every project in an OmniFocus database.
-
-### Send to OmniOutliner (Curt Clifton)
-Generates an OmniOutliner outline from OmniFocus:
-
-1. Export All to OmniOutliner (Outline all folders and projects)
-2. Export View to OmniOutliner (Outline current view)
-3. Send to OmniOutliner (Outline selected items)
  
 ### Templates (Chris Sauvé)
 Quickly create instances of complex templates. [See in action](https://www.youtube.com/watch?v=avu2Gaqy3Uo) 

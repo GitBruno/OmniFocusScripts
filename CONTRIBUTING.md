@@ -15,7 +15,7 @@ Name of Script/
 
 ## Keep it fresh!
 
-Every script is expected to be working with the latest version of OmniFocus.
+Every script is expected to be working with the latest version of OmniFocus without any dependencies.
 
 Scripts that do not work as expected (as of old age) are depreciated and moved to the retired branch.
 From there, scripts can be revived.

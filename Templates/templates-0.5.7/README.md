@@ -1,8 +1,11 @@
 # Templates.scpt
-## by Chris Sauvé of [pxldot](http://pxldot.com)
+
+## Important Note
+
+I no longer actively maintain this script, and haven't for some time. Further, I no longer use OmniFocus (nothing against it, my needs/ tastes just changed). If anyone is interested in fixing bugs, improving the script, or making updates of any kind, please feel free to fork this for yourself or message me about taking over this repo.
 
 ## Screencast
-A screencast illustrating almost all of the features of this script can be seen on the [Template project's page](http://cmsauve.com/projects/templates/) of my website.
+If you need help understanding the features of this script, you can watch a [video of the script in action](https://www.youtube.com/watch?v=avu2Gaqy3Uo) to get you up to speed.
 
 ## Why I Built This Script
 OmniFocus is an incredible piece of software. I and countless others rely on it every day to manage increasingly hectic lives and complex, multi-facetted projects. A central tenet of "good" productivity tools (as opposed to those we simply indulge in for their own sake, the "productivity porn") is that they reduce friction. This script is an effort to reduce one of the largest sources of friction remaining in my OmniFocus setup: maintaining and creating projects that don't recur on even intervals, but occur frequently enough that their planning and capture becomes a time sink. The script allows you to create templates as simple or complex as you need them to be, and to quickly create instances of those templates so you can get back to what's important.
@@ -26,7 +29,7 @@ You can use variables in your script to have the script prompt you for a string 
 
 **Choose Variables** are a special kind of variable that allow you define a list of options from which you will choose when creating a new instance of the project. You declare these along with your basic variables (that is, using the same variable symbol and in the same paragraph as your basic variables), but use the following adjusted notation: `$variableName {option 1, option 2, option 3}`. Upon creating a new instance of the project, you will be asked which of these options to replace the variable `$variableName` with.
 
-**Date Variables** are another special variable that you give a relative or absolute date as input. You declare these just like basic variables, but their name must start with the word "date" (for example, `$date of module 1` or `$date-stage1`). When prompted for input, you can use any of the relative or absolute date strings you can normally use with OmniFocus; things like "19:00", "1d" (1 day), "3w 4d 2pm" (3 weeks and 4 days at 2:00PM), "sun" (next Sunday), "Feb 28", and "February 28" will all work. The "short date" format you have specified in the Languages and Test preference pane will also work as an absolute date. The order of the year, month and date are all that matter, and the year, month and date can the be stated with or without leading ones and with any of the following seperators: ".", "/", and "-". So, if your short date format is YY/MM/DD, all of the following would represent January 31, 2014: "14.01.31", "2014/01/31", and "01-31". These date variables can then be used in place of basic variables (that is, as text) or, more interestingly, in assigning start and due dates (see below).
+**Date Variables** are another special variable that you give a relative or absolute date as input. You declare these just like basic variables, but their name must start with the word "date" (for example, `$date of module 1` or `$date-stage1`). When prompted for input, you can use any of the relative or absolute date strings you can normally use with OmniFocus; things like "19:00", "1d" (1 day), "3w 4d 2pm" (3 weeks and 4 days at 2:00PM), "sun" (next Sunday), "Feb 28", and "February 28" will all work. The "short date" format you have specified in the Language and Region preference pane will also work as an absolute date. The order of the year, month and date are all that matter, and the year, month and date can the be stated with or without leading ones and with any of the following seperators: ".", "/", and "-". So, if your short date format is YY/MM/DD, all of the following would represent January 31, 2014: "14.01.31", "2014/01/31", and "01-31". These date variables can then be used in place of basic variables (that is, as text) or, more interestingly, in assigning start and due dates (see below).
 
 When using date variables for inserting the date in task notes/ names, you can specify a custom format in which the date will be inserted by changing the `dateFormat` property within the script. The default will be to insert the date in the format "June 17, 2013". You can change the way in which the year, month, day, and/or weekday will be displayed, as well as what other text you would like to have in the date. For the details on setting up your own custom format, see the comments included below the `dateFormat` property at the top of the script.
 
@@ -104,8 +107,7 @@ There are a few compile-time options that you can change for this script. If you
 - `@if conditional(s) then (complete | delete)`: will complete or delete the task based on the conditional statement(s) you specify. See the Conditionals section for more details.
 
 ## Installation
-Download the most recent version of the script. Once you have downloaded the script, navigate to your Application script folder located at `~/Library/Scripts/Applications/OmniFocus`. Apple hides the Library folder in Mac OS X 10.7 or later by default, so the easiest way to get to this folder is to select the menu item `Go > Go To Folder...` in Finder.app. You may have to manually create an OmniFocus folder in the `~/Library/Scripts/Applications` directory if you do not have any previous scripts for OmniFocus (you may have to create more of the folders in the directory; if you don't have an Applications folder or even a Scripts folder, you will have to create those as well).
-
+For the most recent versions of OmniFocus2 and OS X, installation proceeds as follows. Download this repository and locate the `Templates.scpt` file. This must be placed in the scripts folder for OmniFocus, which is located at `~/Library/Application Scripts/com.omnigroup.OmniFocus2`. In recent versions of OS X Apple hides the Library folder by default, so the easiest approach is to select 'Open Scripts Folder' from the Help menu in OmniFocus. If necessary this will create the relevant folder, and then open this location in the finder. Now you can drag and drop the `Templates.scpt` file into this folder. (If you are confident on the command line, this can obviously all be achieved through the terminal.)
 
 ## Using The Script
 There are countless ways you can run the script. If you are a pro user, you likely know even more ways than I do: options like launching the script from FastScripts, Alfred, LaunchBar, or a Keyboard Maestro macro are all available to you. Below I'll explain two ways to run the script, primarily targetted at more novice users.
@@ -154,4 +156,5 @@ OmniFocus has another way to run scripts, and it's even easier than the method d
 
 
 ## License
-Use it, change it, repackage it, whatever. Try not to take credit for my work.
+
+MIT
