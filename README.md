@@ -22,7 +22,7 @@ Reset the due date to later:
 A template for script developers that processes every project in an OmniFocus database.
  
 ### Templates (Chris Sauvé)
-Quickly create instances of complex templates. [more &#xbb;](https://github.com/lemonmade/templates).
+Quickly create instances of complex templates. [more &#xbb;](https://github.com/lemonmade/templates)
 
 ### Verify Next Actions Exist (Curt Clifton)
 Scans all projects and action groups in front OmniFocus document identifying any that lack a next action.
